@@ -1,0 +1,49 @@
+$main-color: #e9dccd;
+$secondary-color: #df8e24;
+$modal-bg-color: rgba(0, 0, 0, 0.5);
+$border-color: #c1c1c1;
+$content-color: #555353;
+$confirm-color: #3ece3e;
+$cancel-color: #ff3434;
+$warning-color: #f8efef;
+$border-radius: 5px;
+$toast-top: 8rem;
+$modal-z-index: 1000;
+$toast-z-index: 2000;
+
+@mixin intent {
+  margin: 0.5rem;
+  font-size: 0.8rem;
+  width: 12rem;
+  min-height: 6rem;
+  background: white;
+  color: $content-color;
+  border-radius: $border-radius;
+}
+
+/* RESET CSS & GENERAL SETTINGS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  scroll-behavior: smooth;
+}
+
+:root {
+  font-size: calc(1vw + 0.7em);
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  background: $main-color;
+  overflow-x: hidden;
+}
